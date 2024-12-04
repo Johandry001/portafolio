@@ -1,0 +1,231 @@
+/* Importando la fuente para la pagina*/
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f6fafc;
+}
+/*------------------------------SECCION DE INCIO------------------------------------*/
+
+.inicio{
+    background: linear-gradient(to right, #013D46, #013D50);
+    clip-path: polygon(0 0, 100% 0, 100% 52%, 49% 78%, 0 51%);
+    height: 90vh;
+    padding: 0 20px;
+}
+.inicio .contenido{
+    max-width: 1100vh;
+    margin: auto;
+    color: #fff;
+}
+.inicio header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.inicio .logo{
+    display: flex;
+    align-items: center;
+    color: #f6fafc;
+    font-size: 25px;
+}
+.inicio .logo i{
+    display: inline-block;
+    margin-right: 20px;
+}
+#inicio header nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+#inicio header nav a:hover{
+    border-bottom: 2px solid #F9A101;
+}
+.inicio .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+.inicio .redes a:hover{
+    color: #F9A101;
+}
+.inicio .fila{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 100px;
+}
+.inicio .fila .colum{
+    width: 50%;
+}
+.inicio .fila .colum h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.inicio .fila .colum p{
+    margin-bottom: 15px;
+}
+.inicio .fila .colum .cont-img{
+    max-width: 600px;
+    margin: auto;
+}
+.inicio .fila .colum .cont-img img{
+    width: 100%;
+}
+.inicio .fila .colum button{
+    background: none;
+    width: fit-content;
+    padding: 5px 20px;
+    border: 2px solid #F9A101;
+    color: #fff;
+    background: linear-gradient(to right, #F9A101, #FF9900);
+    transition: .5s;
+    cursor: pointer;
+}
+.inicio .fila .colum button:hover{
+    transform: scale(1.1);
+}
+#nav-icon{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+#nav-icon:hover{
+    background: #F9A101;
+}
+.sombra{
+    filter: drop-shadow(0em 10px 30px #013D50);
+}
+
+/* ---------------------------------Sección Servicios--------------------------------------*/
+
+.servicios{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    top: -160px;
+}
+.servicios .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.servicios .fila .colum{
+    text-align: center;
+    width: 30%;
+}
+.servicios .fila .colum .card{
+    border: 1px solid #8d8d8d;
+    height: 400px;
+    background-color: #f6fafc;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.servicios .icono{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.servicios .icono .circulo{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+}
+.servicios .color1{
+    background: linear-gradient(#e69705, #faab00);
+}
+.servicios .color2{
+    background: linear-gradient(#02792f, #68d999);
+}
+.servicios .color3{
+    background: linear-gradient(#0d437d, #7093e6);
+}
+.servicios h3{
+    margin-bottom: 20px;
+}
+.servicios p{
+    color: #8d8d8d;
+    line-height: 25px;
+    font-size: 12px;
+}
+.servicios .card a{
+    text-decoration: none;
+    color: #7093e6;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* ---------------------------------Sección Servicios--------------------------------------*/
+.habilidades{
+    background: linear-gradient(to right, #013d46, #006f80);
+    padding: 60px 0;
+    position: relative;
+    color: #fff;
+    top: -100px;
+}
+.habilidades h2{
+    text-align: center;
+}
+.habilidades .contenero-habi{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    padding: 10px;
+    margin: auto 0;
+}
+.score .box{
+    width: 100%;
+}
+.score .box h2{
+    display: block;
+    justify-content: center;
+}
+.score .box .chart{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    line-height: 160px;
+    font-size: 40px;
+    text-align: center;
+}
+.score .box canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
